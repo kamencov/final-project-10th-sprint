@@ -27,7 +27,7 @@ echo "$1, привет!"' >> dir2/hello.sh
 
 # устанавливаем для task/dir2/hello.sh права rwxrw-r--
 
-chmod 755 task/dir2/hello.sh
+chmod 764 task/dir2/hello.sh
 
 # сохраняем список файлов task/dir2 в task/dir2/list.txt
 
@@ -48,7 +48,7 @@ cat task/dir2/list.txt >> task/dir1/summary.txt
 
 # определяем переменную окружения NAME со значением "Всем студентам"
 
-export NAME="Всем студентам"
+NAME="Всем студентам"
 
 # запускаем task/dir2/hello.sh с переменной окружения NAME в качестве аргумента
 # вывод скрипта должен дописаться в файл task/dir1/summary.txt
